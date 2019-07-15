@@ -4,10 +4,10 @@ spring:
   application:
     name: upload-service
   rabbitmq:
-    virtual-host: /leyou
-    username: /leyou
-    password: leyou
-    host: 192.168.19.121
+    virtual-host: /
+    username: guest
+    password: guest
+    host: localhost
   servlet:
     multipart:
       max-file-size: 10MB # 限制文件上传的大小
