@@ -8,25 +8,25 @@ spring:
   data:
     elasticsearch:
       cluster-name: elasticsearch
-      cluster-nodes: 192.168.19.121:9300
+      cluster-nodes: localhost:9300
   datasource:
     url: jdbc:mysql://127.0.0.1:3306/leyou?characterEncoding=UTF-8&useSSL=false
     username: root
-    password: 123456
+    password: root
     driver-class-name: com.mysql.jdbc.Driver
     hikari:
       maximum-pool-size: 20
       minimum-idle: 10
   rabbitmq:
-    virtual-host: /leyou
-    username: /leyou
-    password: leyou
-    host: 192.168.19.121
+    virtual-host: /
+    username: guest
+    password: guest
+    host: localhost
     template:
       exchange: leyou.order.exchange
     publisher-confirms: true
   redis:
-    host: 192.168.19.121
+    host: localhost
   jackson:
     default-property-inclusion: non_null # 配置json处理时忽略空值
   resources:
