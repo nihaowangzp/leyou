@@ -7,7 +7,7 @@ spring:
     virtual-host: /
     username: guest
     password: guest
-    host: localhost
+    host: 127.0.0.1
 eureka:
   client:
     fetch-registry: false
