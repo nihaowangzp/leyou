@@ -7,7 +7,7 @@ spring:
     virtual-host: /
     username: guest
     password: guest
-    host: 127.0.0.1
+    host: localhost
 eureka:
   client:
     service-url:
